@@ -37,7 +37,7 @@ public class Gal22v10JEDECExporter implements ExpressionExporter<Gal22v10JEDECEx
         filler = new FuseMapFiller(map, 22);
 
         pinMap = new PinMap()
-                .setAvailInputs(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13)
+                .setAvailInputs(1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 13)
                 .setAvailOutputs(14, 15, 16, 17, 18, 19, 20, 21, 22, 23);
         builder = new BuilderCollectorGAL(pinMap);
     }

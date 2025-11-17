@@ -63,6 +63,15 @@ public class Gal22v10JEDECExporterTest extends TestCase {
 
 
         Gal22v10JEDECExporter gal = new Gal22v10JEDECExporter();
+        gal.getPinMapping()
+                .assignPin("D", 2)
+                .assignPin("Q0", 14)
+                .assignPin("Q1", 15)
+                .assignPin("Q2", 16)
+                .assignPin("P0", 17)
+                .assignPin("P1", 18)
+                .assignPin("P2", 19)
+                .assignPin("P3", 20);
 
         gal.getBuilder()
                 .addSequential("Q0", Q0d)
